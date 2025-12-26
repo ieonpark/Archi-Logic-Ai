@@ -8,7 +8,7 @@ from pyproj import Geod
 from shapely.geometry import mapping, Polygon, MultiPolygon
 import pandas as pd
 
-st.set_page_config(layout="wide", page_title="Archi-Logic AI - Feasibility Analysis", initial_sidebar_state="expanded")
+st.set_page_config(layout="wide", page_title="Archi Logic AI - Feasibility Analysis", initial_sidebar_state="expanded")
 
 # ============ METADATA ============
 AUTHOR = "IEON PARK"
@@ -657,7 +657,7 @@ overall_risk_score = 100 - (len(high_risks) * 25 + len(medium_risks) * 10 + len(
 overall_risk_score = max(0, overall_risk_score)
 
 # ============ MAIN UI - TABS ============
-st.title("Archi-Logic AI - Feasibility Analysis")
+st.title("Archi Logic AI - Feasibility Analysis")
 st.caption("Functional Prototype - Patent Pending")
 
 tab1, tab2 = st.tabs([
@@ -1306,5 +1306,5 @@ st.caption(
     f"Analysis Based On: {state} building codes, FHA/ADA requirements, {state} QAP criteria\n"
     f"Code References: {req['code']}, Fair Housing Act, ADA Standards\n"
     "Disclaimer: Preliminary feasibility tool. Consult local codes, QAP requirements, and qualified professionals for final determination.\n"
-    f"© {COPYRIGHT_YEAR} {AUTHOR} | {CONTACT_EMAIL} | Archi-Logic AI | Patent Pending"
+    f"© {COPYRIGHT_YEAR} {AUTHOR} | {CONTACT_EMAIL} | Archi Logic AI | Patent Pending"
 )
